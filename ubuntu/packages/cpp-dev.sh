@@ -2,6 +2,7 @@
 
 sudo apt install -y gcc
 sudo apt install -y g++
+sudo apt install -y clang
 sudo apt install -y clang-tools
 sudo apt install -y llvm
 sudo apt install -y cmake
