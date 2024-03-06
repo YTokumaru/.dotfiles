@@ -9,6 +9,7 @@ sudo apt install -y ninja
 
 sudo apt install -y ccache
 sudo apt install -y cppcheck
+sudo apt install -y gcovr
 sudo apt install -y valgrind
 sudo apt install -y gdb
 sudo apt install -y doxygen
