@@ -4,7 +4,12 @@
 # configuration settings.
 spack:
   # add package specs to the `specs` list
-  specs: []
+  specs:
+  - mpich+cuda
+  - fftw
+  - gsl
+  - eigen+ipo
+  - valgrind+boost+mpi
   view: true
   concretizer:
     unify: true
