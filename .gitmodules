@@ -4,4 +4,4 @@
 	ignore = dirty
 [submodule "spack"]
 	path = spack
-	url = https://github.com/spack/spack.git
+	url = https://github.com/spack/spack
