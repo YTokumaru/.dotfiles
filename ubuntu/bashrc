@@ -118,3 +118,4 @@ fi
 
 # User specific aliases and functions
 . ~/.dotfiles/spack/share/spack/setup-env.sh
+export PATH="$PATH:/opt/nvim/"
