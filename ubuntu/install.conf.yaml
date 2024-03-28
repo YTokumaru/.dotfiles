@@ -13,6 +13,9 @@
     ~/.dotfiles/spack/var/spack/environments/default/spack.yaml:
         create: true
         path: spack/spack.yml
+    ~/.config/nvim:
+        create: true
+        path: ../config/nvim
 
 - create:
     ~/.ssh:
