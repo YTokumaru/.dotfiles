@@ -25,3 +25,4 @@
     - [. ./packages/cpp-dev.sh, Installing C++ development dependencies]
     - [. ./packages/spack-deps.sh, Installing Spack dependencies]
     - [. ./packages/latex.sh, Installing LaTeX dependencies]
+    - [. ./packages/neovim.sh, Installing Neovim]
