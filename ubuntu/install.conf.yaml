@@ -2,26 +2,31 @@
 
 - link:
     ~/.profile:
-        force: true
-        path: profile
+      force: true
+      path: profile
     ~/.bashrc:
-        force: true 
-        path: bashrc
+      force: true
+      path: bashrc
     ~/.bash_logout:
-        force: true 
-        path: bash_logout
+      force: true
+      path: bash_logout
     ~/.dotfiles/spack/var/spack/environments/default/spack.yaml:
-        create: true
-        path: spack/spack.yml
+      path: spack/spack.yml
+      create: true
     ~/.config/nvim:
-        create: true
-        path: ../config/nvim
+      create: true
+      path: ../config/nvim
+    ~/.zshrc:
+      force: ture
+      path: zshrc
 
 - create:
     ~/.ssh:
       mode: 0700
 
 - shell:
+    - [. ./packages/shell.sh, Installing dependencies for zsh]
+    - [git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh, Install oh-my-zsh]
     - [. ./packages/cpp-dev.sh, Installing C++ development dependencies]
     - [. ./packages/spack-deps.sh, Installing Spack dependencies]
     - [. ./packages/latex.sh, Installing LaTeX dependencies]
