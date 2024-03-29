@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 sudo apt update
-sudo apt upgrade -y
 
 sudo apt install -y gcc
 sudo apt install -y g++
@@ -22,9 +21,13 @@ sudo apt install -y gdb
 sudo apt install -y doxygen
 sudo apt install -y graphviz
 
-code --install-extension GitHub.copilot-chat
-code --install-extension ms-vscode.cmake-tools
-code --install-extension streetsidesoftware.code-spell-checker
-code --install-extension ms-vscode.cpptools
-code --install-extension eamodio.gitlens
-code --install-extension ms-vscode.cpptools
+# Install VSCode extensions on WSL
+if [[ -f "/proc/sys/fs/binfmt_misc/WSLInterop" ]]; then
+	code --install-extension GitHub.copilot-chat
+	code --install-extension ms-vscode.cmake-tools
+	code --install-extension streetsidesoftware.code-spell-checker
+	code --install-extension ms-vscode.cpptools
+	code --install-extension eamodio.gitlens
+	code --install-extension ms-vscode.cpptools
+fi
+
