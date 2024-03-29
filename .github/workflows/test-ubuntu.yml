@@ -1,0 +1,27 @@
+name: Test dotfiles on ubuntu
+
+on:
+  pull_request:
+  release:
+    types: [published]
+  push:
+    branches:
+      - main
+      - develop
+
+jobs:
+  Test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os:
+          - ubuntu-20.04
+          - ubuntu-22.04
+
+    steps:
+      - name: Checkout repositiry code
+        uses: actions/checkout@v4
+
+      - name: Run install script
+        run: ./ubuntu/install
