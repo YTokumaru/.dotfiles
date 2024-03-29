@@ -19,6 +19,8 @@
     ~/.zshrc:
       force: ture
       path: zshrc
+    ~/.latexmkrc:
+      path: latexmkrc
 
 - create:
     ~/.ssh:
