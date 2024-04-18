@@ -7,6 +7,7 @@ if vim.g.vscode then
     vim.keymap.set("n", "<C-/>", "<Cmd>call VSCodeNotify('workbench.action.terminal.toggleTerminal')<CR>", { desc = "Terminal (root dir)" })
     vim.keymap.set("n", "<leader>gg", "<Cmd>call VSCodeNotify('workbench.view.scm')<CR>", { desc = "Source control" })
     vim.keymap.set("n", "<leader>e", "<Cmd>call VSCodeNotify('workbench.view.explorer')<CR>", { desc = "Explorer" })
+    vim.keymap.set("n", "<leader>ff", "<Cmd>call VSCodeNotify('workbench.action.quickOpen')<CR>", { desc = "Open file" })
     
     -- tab-related shorcuts
     vim.keymap.set("n", "H", "<Cmd>call VSCodeNotify('workbench.action.previousEditor')<CR>", { desc = "Go to previous tab" })
