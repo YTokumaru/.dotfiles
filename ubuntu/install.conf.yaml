@@ -31,6 +31,7 @@
 - shell:
     - [. ./packages/shell.sh, Installing dependencies for zsh]
     - [git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh, Install oh-my-zsh]
+    - [git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm, Install Tmux Plugin Manager]
     - [. ./packages/cpp-dev.sh, Installing C++ development dependencies]
     - [. ./packages/spack-deps.sh, Installing Spack dependencies]
     - [. ./packages/latex.sh, Installing LaTeX dependencies]
