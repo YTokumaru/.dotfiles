@@ -17,6 +17,7 @@
       create: true
       path: ../config/nvim
     ~/.config/tmux/tmux.conf:
+        create: true
         path: tmux.conf
     ~/.zshrc:
       force: ture
